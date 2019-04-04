@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+body {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+}
+
+.Header__text {
+  font-size: 0.4em;
+  color: rgba(250,250,250,0.6);
+}
+
+.Header__link {
+  color: #fff;
+  background-color: #af1414;
+  padding: 10px 60px;
+  display: inline-block;
+  font-size: 0.6em;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.Header__link:hover {
+  background-color: #3a2e2e;
+}
+
+.container {
+  display: flex;
+}
+
+/* Header */
+
+.Header {
+  width: 100%;
+  height: 650px;
+  background-image: url(https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Header__background {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Header__box {
+  font-size: 2.7em;
+  text-align: center;
+  color: #fff;
+}
+
+/* Navigation */
+
+.burger {
+  display: none;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  padding-top: 10px;
+  padding-right: 15px;
+  background-color: #fff;
+  font-size: 1em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.nav__wrapper {
+  max-width: 1000px;
+  padding-left: 5%;
+}
+
+.nav__menu {
+  margin: 0;
+  vertical-align: middle;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  color: #292d33;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #ff0828; /*#ff6347*/
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+/* About */
+.About {
+  width: 100%;
+  color: #fff;
+  background-image: url(https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/about.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.About__background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+
+.About__container,
+.Skills__container {
+  width: 48%;
+}
+
+.About__title,
+.Projects__title {
+  display: inline-block;
+  border-bottom: 4px solid #fff;
+  font-size: 2.6em;
+  color: #fff;
+}
+
+.About__text {
+  margin-top: 20px;
+}
+
+.About__link {
+  display: inline-block;
+  margin-top: 49px;
+  padding: 11px 15px;
+  background-color: #af1414;
+  color: #fff;
+}
+
+.About__link:hover {
+background-color:#3a2e2e;
+}
+
+/* Skills */
+.Skills__container {
+  padding-top: 70px;
+}
+
+.Skills__Item {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Skills__title {
+  background-color: rgba(250, 250, 250, 0.6);
+  padding: 0 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.Skills__title-html {
+  animation: skilltitlehtml 2s linear;
+  width: 85%;
+}
+
+@keyframes skilltitlehtml {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.Skills__title-css {
+  animation: skilltitlecss 2s linear;
+  width: 80%;
+}
+
+@keyframes skilltitlecss {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.Skills__title-js {
+  animation: skilltitlejs 2s linear;
+  width: 60%;
+}
+
+@keyframes skilltitlejs {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.Skills__title-react {
+  animation: skilltitlereact 2s linear;
+  width: 50%;
+}
+
+@keyframes skilltitlereact {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* Projects */
+.Projects {
+  width: 100%;
+  color: #fff;
+  background-image: url(https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/projects.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Projects__background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 150px;
+  padding-bottom: 300px;
+}
+
+.Projects__box {
+  margin-top: 100px;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.side {
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.card__link {
+  font-size: 1.8em;
+  color: #0087cc;
+}
+
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: #575b5d;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.Toolbar {
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.Btn {
+  letter-spacing: 5px;
+  width: 19%;
+  padding: 9px 0;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Btn__all {
+  background-color: #a91212e6;
+}
+
+.Btn__js,
+.bgColor__js {
+  background-color: #12a93fe6;
+}
+
+.Btn__fe,
+.bgColor__fe {
+  background-color: #ff7300e6;
+}
+
+.Btn__react,
+.bgColor__react {
+  background-color: #083e94;
+}
+
+.Btn__redux,
+.bgColor__redux {
+  background-color: #770a80e6;
+}
+
+.Btn__all:hover {
+  background-color: rgba(169, 18, 18, 0.6);
+}
+
+.Btn__js:hover {
+  background-color: rgba(18, 169, 62, 0.6);
+}
+
+.Btn__react:hover {
+  background-color: rgba(8, 62, 148, 0.6);
+}
+
+.Btn__redux:hover {
+  background-color: rgba(119, 10, 128, 0.6);
+}
+
+.Btn__fe:hover {
+  background-color: rgba(255, 114, 0, 0.6);
+}
+
+.bg__ball {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/ball.png");
+}
+
+.bg__carousel {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/carousel.png");
+}
+
+.bg__datatable {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/datatable.png");
+}
+
+.bg__dropdown {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/dropdown.png");
+}
+
+.bg__fe1 {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/fe1.png");
+}
+
+.bg__fe2 {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/fe2.png");
+}
+
+.bg__gallery {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/gallery.png");
+}
+
+.bg__star-wars {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/star-wars.png");
+}
+
+.bg__tabs {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/tabs.png");
+}
+
+.bg__tic-tac-toe {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/tic-tac-toe.png");
+}
+
+.bg__todo {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/todo.png");
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #fff;
+  text-align: center;
+}
+.card-back .card__title {
+  margin: 27% auto 35% auto;
+  font-size: 26px;
+}
+.card-back span {
+  font-size: 20px;
+}
+
+.Footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.Footer__social {
+  justify-content: space-between;
+  width: 80px;
+  font-size: 2em;
+}
+
+.Footer__social a {
+  color: #fff;
+}
+
+.Footer__social a:hover {
+  color: #bd2020;
+}
+
+.Footer__social i {
+  vertical-align: bottom;
+}
+
+.Footer__text {
+  font-size: 15px;
+  align-self: flex-end;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .Header__background {
+    align-items: flex-start;
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+
+  .Header {
+    height: auto;
+  }
+
+  body input + label {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: 20px;
+    width: 15px;
+    z-index: 5;
+  }
+
+  body input + label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    background: #020304;
+    transition: 0.5s;
+  }
+
+  body input + label span:first-child {
+    top: 3px;
+  }
+
+  body input + label span:last-child {
+    top: 16px;
+  }
+
+  body label:hover {
+    cursor: pointer;
+  }
+
+  body input:checked + label span {
+    opacity: 0;
+    top: 50%;
+  }
+
+  body input:checked + label span:first-child {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+
+  body input:checked + label span:last-child {
+    opacity: 1;
+    transform: rotate(-405deg);
+  }
+
+  body input:checked ~ nav {
+    height: 100%;
+    transition-delay: 0s;
+  }
+
+  .burger-icon {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    display: block;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .nav {
+    position: fixed;
+    background: #fff;
+  }
+  .nav__wrapper {
+    position: fixed;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    left: -200px;
+    bottom: 0;
+    padding-top: 70px;
+    padding-left: 20px;
+    background-color: #fff;
+    line-height: 1.6;
+    z-index: 3;
+    transition: left 1s ease;
+  
+  }
+
+  .nav__item {
+    display: block;
+  }
+  .burger:checked ~ .nav {
+    background: transparent;
+  }
+  .burger:checked ~ .nav .nav__wrapper {
+    left: 0;
+    transition: left 1s ease;
+  }
+  .burger:checked ~ .container__background {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(37, 48, 48, 0.7);
+    overflow: hidden;
+  }
+
+  .About__container,
+  .Skills__container {
+    width: 100%;
+  }
+
+  .Btn {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Header__box {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .About__title,
+  .Projects__title {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .Btn {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .Header__title {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .grids {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Toolbar {
+    display: none;
+  }
+
+}
