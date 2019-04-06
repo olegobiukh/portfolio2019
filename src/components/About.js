@@ -25,7 +25,7 @@ function About() {
           <div className="Skills__container">
             <div className="Skills__Item container">
               <span className="Skills__title Skills__title-html">html</span>
-              <span>70%</span>
+              <span>80%</span>
             </div>
             <div className="Skills__Item container">
               <span className="Skills__title Skills__title-css">css</span>

@@ -22,6 +22,20 @@ export default {
       img: "bg__star-wars"
     },
     {
+      name: "Barley-Break",
+      view: "https://olegobiukh.github.io/redux-barley-brick/",
+      tech: "redux",
+      "additional info": "redux, SCSS, GRID",
+      img: "bg__barley-break"
+    },
+    { 
+      name: "Weather App",
+      view: "https://olegobiukh.github.io/react-openweather/",
+      tech: "react",
+      "additional info": "API",
+      img: "bg__weather-app"
+    },
+    {
       name: "Data Table",
       view: "https://olegobiukh.github.io/react-data-table/",
       tech: "react",

@@ -432,6 +432,14 @@ background-color:#3a2e2e;
   background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/todo.png");
 }
 
+.bg__barley-break {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/barley-break.png");
+}
+
+.bg__weather-app {
+  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/weather-app.png");
+}
+
 .card-back {
   height: 100%;
   width: 100%;
