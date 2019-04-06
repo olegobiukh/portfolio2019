@@ -44,7 +44,7 @@ class Projects extends Component {
                               {item.name}
                             </a>
                             <br />
-                            <span>{item["additional info"]}</span>
+                            <span className="card__additional-info">{item["additional info"]}</span>
                           </h2>
                         </div>
                       </div>
