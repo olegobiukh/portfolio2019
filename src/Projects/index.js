@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Zoom, Bounce } from "react-reveal";
+
 import config from "../config";
 import Toolbar from "./components/Toolbar";
 
@@ -23,32 +25,40 @@ class Projects extends Component {
       <section className="Projects" id="projects">
         <div className="Projects__background">
           <div className="wrapper">
-            <h2 className="Projects__title">Projects</h2>
-            <Toolbar handleClick={this.handleClick} />
+            <Bounce top cascade>
+              <h2 className="Projects__title">Projects</h2>
+            </Bounce>
+            <Zoom>
+              <Toolbar handleClick={this.handleClick} />
+            </Zoom>
             <div className="Projects__box grids">
               <>
                 {items.map(item => {
                   return (
-                    <div key={item.name} className="card-container">
-                      <div className="card">
-                        <div
-                          className={`side ${item.img} bgColor__${item.tech}`}
-                        />
-                        <div className="side back">
-                          <h2 className="card__title">
-                            <a
-                              href={item.view}
-                              target="_blank"
-                              className="card__link"
-                            >
-                              {item.name}
-                            </a>
-                            <br />
-                            <span className="card__additional-info">{item["additional info"]}</span>
-                          </h2>
+                    <Zoom key={item.name} cascade>
+                      <div className="card-container">
+                        <div className="card">
+                          <div
+                            className={`side ${item.img} bgColor__${item.tech}`}
+                          />
+                          <div className="side back">
+                            <h2 className="card__title">
+                              <a
+                                href={item.view}
+                                target="_blank"
+                                className="card__link"
+                              >
+                                {item.name}
+                              </a>
+                              <br />
+                              <span className="card__additional-info">
+                                {item["additional info"]}
+                              </span>
+                            </h2>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Zoom>
                   );
                 })}
               </>
