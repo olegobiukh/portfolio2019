@@ -35,30 +35,28 @@ class Projects extends Component {
               <>
                 {items.map(item => {
                   return (
-                    <Zoom key={item.name} cascade>
-                      <div className="card-container">
-                        <div className="card">
-                          <div
-                            className={`side ${item.img} bgColor__${item.tech}`}
-                          />
-                          <div className="side back">
-                            <h2 className="card__title">
-                              <a
-                                href={item.view}
-                                target="_blank"
-                                className="card__link"
-                              >
-                                {item.name}
-                              </a>
-                              <br />
-                              <span className="card__additional-info">
-                                {item["additional info"]}
-                              </span>
-                            </h2>
-                          </div>
+                    <div key={item.name} className="card-container">
+                      <div className="card">
+                        <div
+                          className={`side ${item.img} bgColor__${item.tech}`}
+                        />
+                        <div className="side back">
+                          <h2 className="card__title">
+                            <a
+                              href={item.view}
+                              target="_blank"
+                              className="card__link"
+                            >
+                              {item.name}
+                            </a>
+                            <br />
+                            <span className="card__additional-info">
+                              {item["additional info"]}
+                            </span>
+                          </h2>
                         </div>
                       </div>
-                    </Zoom>
+                    </div>
                   );
                 })}
               </>
