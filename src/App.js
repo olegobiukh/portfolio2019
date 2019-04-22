@@ -9,8 +9,8 @@ import Projects from "./Projects";
 function App() {
   return (
     <>
-      <Header />
       <Nav />
+      <Header />
       <About />
       <Projects />
       <Footer />

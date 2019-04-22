@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Bounce, Flip, Fade } from "react-reveal";
+import { Bounce, Flip } from "react-reveal";
 
 function Header() {
   return (
@@ -13,11 +13,6 @@ function Header() {
           <Flip>
             <p className="Header__text">Front end (JS / React) developer</p>
           </Flip>
-          <Fade bottom>
-            <a className=" Header__link" href="#projects">
-              View my work
-            </a>
-          </Fade>
         </div>
       </div>
     </header>

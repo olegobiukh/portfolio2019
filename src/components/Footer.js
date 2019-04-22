@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Bounce, Slide } from "react-reveal";
+import { Slide } from "react-reveal";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github" />
+              <i className="fab fa-github-square" />
             </a>
             <a
               href="https://www.linkedin.com/in/oleg-obiukh-237362139/"
@@ -29,7 +29,7 @@ function Footer() {
           <Slide bottom>
             <p>+38 (099) 531 39 54</p>
             <p>oleg.obiukh@gmail.com</p>
-            <p>Oleg Obiukh Â©2019</p>
+            <p>Oleg Obiukh ©2019</p>
           </Slide>
         </div>
       </div>

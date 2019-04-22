@@ -94,7 +94,7 @@ body {
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 55px;
@@ -157,7 +157,7 @@ body {
 }
 
 .About__container,
-.Skills__container {
+.Skill {
   width: 48%;
 }
 
@@ -186,78 +186,67 @@ body {
 }
 
 /* Skills */
-.Skills__container {
+.Skill {
   padding-top: 70px;
 }
 
-.Skills__Item {
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-  overflow: hidden;
+.Skill__item {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/skillset.png);
 }
 
-.Skills__title {
-  background-color: rgba(250, 250, 250, 0.6);
-  padding: 0 10px;
-  color: #fff;
-  text-transform: uppercase;
+.Skill__item-html {
+  background-position: -87px 18px;
 }
 
-.Skills__title-html {
-  animation: skilltitlehtml 2s linear;
-  width: 85%;
+.Skill__item-css {
+  background-position: 10px 18px;
 }
 
-@keyframes skilltitlehtml {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 85%;
-  }
+.Skill__item-js {
+  background-position: -1px -83px;
 }
 
-.Skills__title-css {
-  animation: skilltitlecss 2s linear;
-  width: 80%;
+.Skill__item-jquery {
+  background-position: -317px -85px;
 }
 
-@keyframes skilltitlecss {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
+.Skill__item-bootstrap {
+  background-position: 0 -209px;
 }
 
-.Skills__title-js {
-  animation: skilltitlejs 2s linear;
-  width: 60%;
+.Skill__item-sass {
+  background-position: 344px 15px;
 }
 
-@keyframes skilltitlejs {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
+.Skill__item-git {
+  background-position: 225px -209px;
 }
 
-.Skills__title-react {
-  animation: skilltitlereact 2s linear;
-  width: 50%;
+.Skill__item-photoshop {
+  background-position: 335px -209px;
 }
 
-@keyframes skilltitlereact {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50%;
-  }
+.Skill__item-react {
+  background-position: -115px -85px;
+}
+
+.Skill__item-redux {
+  background-position: -203px -85px;
+}
+
+.Skill__item-figma {
+  background-position: -106px -210px;
+}
+
+.Skill__item-npm {
+  background-position: 96px 8px;
+}
+
+.Skill__item-gulp {
+  background-position: 226px 11px;
 }
 
 /* Projects */
@@ -392,58 +381,6 @@ body {
 
 .Btn__fe:hover {
   background-color: rgba(255, 114, 0, 0.6);
-}
-
-.bg__ball {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/ball.png");
-}
-
-.bg__carousel {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/carousel.png");
-}
-
-.bg__datatable {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/datatable.png");
-}
-
-.bg__dropdown {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/dropdown.png");
-}
-
-.bg__fe1 {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/fe1.png");
-}
-
-.bg__fe2 {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/fe2.png");
-}
-
-.bg__gallery {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/gallery.png");
-}
-
-.bg__star-wars {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/star-wars.png");
-}
-
-.bg__tabs {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/tabs.png");
-}
-
-.bg__tic-tac-toe {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/tic-tac-toe.png");
-}
-
-.bg__todo {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/todo.png");
-}
-
-.bg__barley-break {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/barley-break.png");
-}
-
-.bg__weather-app {
-  background-image: url("https://raw.githubusercontent.com/olegobiukh/other/master/portfolio/background/img/weather-app.png");
 }
 
 .card-back {
@@ -615,7 +552,7 @@ body {
   }
 
   .About__container,
-  .Skills__container {
+  .Skill {
     width: 100%;
   }
 
@@ -666,3 +603,11 @@ body {
     display: none;
   }
 }
+
+@media only screen and (max-width: 350px) {
+  
+  .Skill__item {
+    width: 95px;
+  }
+}
+
