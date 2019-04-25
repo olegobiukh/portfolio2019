@@ -62,6 +62,7 @@ class Projects extends Component {
                                 <a
                                   href={item.view}
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                   className="card__link"
                                 >
                                   {item.name}
